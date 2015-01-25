@@ -14,8 +14,7 @@ A simple PhoneGap Build application.
 Your Name
 </author>
 <feature name="DownloadManager">
-        <param name="DownloadManager" value="org.apache.cordova.plugins.DownloadManager.DownloadManager" />
-<plugin name="DownloadManager" value="org.apache.cordova.plugins.DownloadManager.DownloadManager" />
+        <param name="android-package" value="org.apache.cordova.plugins.DownloadManager.DownloadManager" />
     </feature>
-<plugin name="DownloadManager" value="org.apache.cordova.plugins.DownloadManager.DownloadManager" />
+
 </widget>
