@@ -2,17 +2,19 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "com.phonegap.example"
-    version   = "1.0.0">
+    version   = "1.020">
 
-<name>PhoneGap Build Application</name>
+<name>PhoneGap Budsadild Application</name>
 
 <description>
-A simple PhoneGap Build application.
+A simple PhoneGap Buildsadsadd application.
 </description>
 
-<author href="https://example.com" email="you@example.com">
+<author href="https://exampldsade.com" email="you@example.com">
 Your Name
 </author>
+<preference name="useBrowserHistory" value="true" />
+    <preference name="exit-on-suspend" value="false" />
 <feature name="DownloadManager">
         <param name="android-package" value="org.apache.cordova.plugins.DownloadManager.DownloadManager" />
     </feature>
