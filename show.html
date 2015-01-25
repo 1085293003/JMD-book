@@ -1,0 +1,136 @@
+<html lang="fa" charset="UTF-8"><head>
+
+  <title>get</title>
+  <script src="DownloaderManager.js"></script>
+    
+</head>
+<body bgcolor="ffffff" charset="UTF-8">
+
+
+
+<form name="joe">
+<input type="hidden" name="burns" size="35" >
+</form>
+
+
+<script language="javascript"  charset="ISO-8859-1">
+
+var locate = window.location
+document.joe.burns.value = locate
+
+var text = document.joe.burns.value
+
+function delineate(str){
+
+theleft = str.indexOf("=") + 1;
+theright = str.indexOf("text=") - 1;
+return(str.substring(theleft, theright));
+}
+
+var strd = "<a>" +delineate(text)+"</a>" ;
+document.write(unescape(strd))
+</script>
+<br><br>
+    <script language="javascript"  charset="ISO-8859-1">
+function decode_utf8( s ) {
+  return decodeURIComponent( escape( s ) );
+}
+
+        
+var locate = window.location
+document.joe.burns.value = locate
+
+var text = document.joe.burns.value
+
+function delineate12(str){
+
+theleft = str.indexOf("text=") + 5;
+theright = str.indexOf("image=") - 1;
+return(str.substring(theleft, theright));
+}
+
+    
+var strd = "<a>" +delineate12(text)+"</a>" ;
+document.write(unescape(strd)).setCharacterEncoding("UTF-8");
+</script>
+
+<br><br>
+
+<script language="javascript"  charset="ISO-8859-1">
+
+var locate = window.location
+document.joe.burns.value = locate
+
+var text = document.joe.burns.value
+
+function delineate2(str){
+
+point = str.lastIndexOf("=");
+
+return(str.substring(point+1,str.length));
+}
+    
+var strd2 = "<a>" +delineate2(text)+"</a>" ;
+document.write(unescape(strd2))
+
+</script>
+
+<br><br>
+
+
+<form name="cow1">
+First Name: <input type="text" name="boy1">
+</form>
+
+<script language="javascript">
+
+var zork2 = delineate(text)
+document.cow1.boy1.value = zork2
+
+
+
+</script>
+
+
+
+<form name="cow">
+Last Name: <input type="text" name="boy">
+</form>
+
+<script language="javascript">
+
+var zork = delineate2(text)
+document.cow.boy.value = zork
+
+
+
+</script>
+
+
+    <script>
+        
+        function dlthepdf(){
+            var url2dl=unescape(delineate(text));
+     downloadmanager(
+    "start",
+    {
+        url: url2dl,
+        overwrite: true
+    },
+    function(info) {
+        console.info(info.progress);
+        // Example to stop a download on 30%:
+        if (info.progress === 30)
+            downloadmanager("cancel", {id: info.id}, function() {}, function() {});
+    },
+    function(error) {
+        console.error(error);
+    }
+); 
+            
+	}
+    </script>
+    
+<a href="#" onclick="dlthepdf();">download PDF</a>
+    
+</body></html>

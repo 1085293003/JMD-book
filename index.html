@@ -1,0 +1,367 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile Web App</title>
+    <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="application/javascript"></script>
+<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+    
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="DownloaderManager.js" type="application/javascript"></script>
+    <script src="jput.js" type="application/javascript"></script>
+ <script src="load-json.js"></script>
+    
+
+
+</head> 
+<body onload="jsdhsjdshj()"> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Page One</h1>
+	</div>
+	<div data-role="content">
+    
+   <div id="test-get">
+       
+    <p id="sdsdsd"></p>
+ 
+       <a onclick="dellsd()">remove</a>
+       <form method="GET" enctype="multipart/form-data" action="" id="myForm-1"><a>حل المسائل اول دبیرستان</a><input type="hidden" name="name" id="img_val" value="http://jmdmahdi.ir/?p=339"><input type="hidden" name="JMDSP" id="img_val" value="show"><input type="hidden" name="text" id="img_val" value="کتاب فلان است"><input type="hidden" name="image" id="img_val" value="http://flan.ir"><input type="submit" id="1" value="Take Screenshot Of Div Below"></form>
+       
+<a href="show.html?name=http%3A%2F%2Fjmdmahdi.ir%2F%3Fp%3D339&text=%DA%A9%D8%AA%D8%A7%D8%A8+%D9%81%D9%84%D8%A7%D9%86+%D8%A7%D8%B3%D8%AA&image=http%3A%2F%2Fflan.ir#">test</a>
+</div>
+
+    <h1 id="add">Example</h1>
+        <div id="result">g</div>
+    <p>localStorage</p>
+   <form name="mahdi">
+<input type="hidden" name="jamshidi" size="35" >
+</form>
+        <form name="joe">
+<input type="hidden" name="burns" size="35" >
+</form>
+        
+          <script>
+        var locations= window.location;
+        document.mahdi.jamshidi.value = locations;
+            var checkt = document.mahdi.jamshidi.value;
+            var word = 'JMDSP';
+    if(checkt.indexOf(word)!=-1){
+        
+      
+
+var locate = window.location;
+document.joe.burns.value = locate;
+
+var text = document.joe.burns.value;
+
+
+
+function delineate(str){
+
+theleft = str.indexOf("=") + 1;
+theright = str.indexOf("JMDSP=") - 1;
+return(str.substring(theleft, theright));
+}
+
+var strd = "<a>" +delineate(text)+"</a>" ;
+document.write(unescape(strd));
+
+
+
+   document.write("<br><br>");
+        
+        
+        
+        function delineate1111(str){
+
+theleft = str.indexOf("image=") + 6;
+          if(checkt.indexOf("#")!=-1){ 
+              theright = str.indexOf("#") ;
+          }else{
+theright = str.length;}
+return(str.substring(theleft, theright));
+}
+
+var strd111 = "<a>" +delineate1111(text)+"</a>" ;
+document.write(unescape(strd111));
+
+        
+          document.write("<br><br>");
+        
+
+function delineate12(str){
+
+theleft = str.indexOf("text=") + 5;
+theright = str.indexOf("image=") - 1;
+return(str.substring(theleft, theright));
+}
+
+    
+var strd11 = "<a>" +delineate12(text)+"</a>" ;
+document.write(unescape(strd11)).setCharacterEncoding("UTF-8");
+        
+        
+        
+        
+      
+        
+        
+        
+
+    
+        
+        }        
+ </script>
+        
+		<ul data-role="listview">
+			<li><a href="#page2">Page Two</a></li>
+            <li><a href="#page3">Page Three</a></li>
+			<li><a href="#page4">Page Four</a></li>
+		</ul>	
+       
+
+      
+        
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>Page Two</h1>
+	</div>
+	<div data-role="content">	
+		<script>
+        
+    
+       
+     downloadmanager(
+    "start",
+    {
+        url: "http://jmddl.adns.ir/index.zip",
+        filePath: "from_myapp",
+        fileName: "hello.zip", // (FileSystem)/Download/from_myappp/hello.txt
+        overwrite: true,
+        useNotificationBar: true,
+        startToast: "Starting download...",
+        endToast: "Download end!",
+        ticker: "Downloading...",
+        notificationTitle: "hello.zip",
+        cancelToast: "Download canceled!"
+    },
+    function(info) {
+        console.info("id:          "+info.id+"\n" +
+                     "downloading: "+info.downloading+"\n" +
+                     "total:       "+info.total+"\n" +
+                     "file:        "+info.file+"\n" +
+                     "dir:         "+info.dir+"\n" +
+                     "progress:    "+info.progress+"\n"
+                    );
+        // progress bar example:
+        $('#progress_bar').css('width', info.progress)
+    },
+    function(error) {
+        alert(error);
+    }
+);
+            
+	
+    </script>
+    <style>
+        .meter { 
+	height: 20px;  /* Can be anything */
+	position: relative;
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+	-webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+	-moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
+	box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+        .meter > span {
+	display: block;
+	height: 100%;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	background-color: rgb(43,194,83);
+	background-image: -webkit-gradient(
+	  linear,
+	  left bottom,
+	  left top,
+	  color-stop(0, rgb(43,194,83)),
+	  color-stop(1, rgb(84,240,84))
+	 );
+	background-image: -webkit-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	background-image: -moz-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	background-image: -ms-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	background-image: -o-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	-webkit-box-shadow: 
+	  inset 0 2px 9px  rgba(255,255,255,0.3),
+	  inset 0 -2px 6px rgba(0,0,0,0.4);
+	-moz-box-shadow: 
+	  inset 0 2px 9px  rgba(255,255,255,0.3),
+	  inset 0 -2px 6px rgba(0,0,0,0.4);
+	position: relative;
+	overflow: hidden;
+}
+        .meter > span:after {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background-image: 
+	   -webkit-gradient(linear, 0 0, 100% 100%, 
+	      color-stop(.25, rgba(255, 255, 255, .2)), 
+	      color-stop(.25, transparent), color-stop(.5, transparent), 
+	      color-stop(.5, rgba(255, 255, 255, .2)), 
+	      color-stop(.75, rgba(255, 255, 255, .2)), 
+	      color-stop(.75, transparent), to(transparent)
+	   );
+	background-image: 
+		-webkit-linear-gradient(
+		  -45deg, 
+	      rgba(255, 255, 255, .2) 25%, 
+	      transparent 25%, 
+	      transparent 50%, 
+	      rgba(255, 255, 255, .2) 50%, 
+	      rgba(255, 255, 255, .2) 75%, 
+	      transparent 75%, 
+	      transparent
+	   );
+	background-image: 
+		-moz-linear-gradient(
+		  -45deg, 
+	      rgba(255, 255, 255, .2) 25%, 
+	      transparent 25%, 
+	      transparent 50%, 
+	      rgba(255, 255, 255, .2) 50%, 
+	      rgba(255, 255, 255, .2) 75%, 
+	      transparent 75%, 
+	      transparent
+	   );
+	background-image: 
+		-ms-linear-gradient(
+		  -45deg, 
+	      rgba(255, 255, 255, .2) 25%, 
+	      transparent 25%, 
+	      transparent 50%, 
+	      rgba(255, 255, 255, .2) 50%, 
+	      rgba(255, 255, 255, .2) 75%, 
+	      transparent 75%, 
+	      transparent
+	   );
+	background-image: 
+		-o-linear-gradient(
+		  -45deg, 
+	      rgba(255, 255, 255, .2) 25%, 
+	      transparent 25%, 
+	      transparent 50%, 
+	      rgba(255, 255, 255, .2) 50%, 
+	      rgba(255, 255, 255, .2) 75%, 
+	      transparent 75%, 
+	      transparent
+	   );
+	z-index: 1;
+	-webkit-background-size: 50px 50px;
+	-moz-background-size:    50px 50px;
+	background-size:         50px 50px;
+	-webkit-animation: move 2s linear infinite;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	overflow: hidden;
+}
+        
+        </style>
+<a href="#" onclick="dlthepdf();">download PDF</a>
+    	<div class="meter">
+	<span id="progress_bar" style="width: 3%"></span>
+</div>
+      
+
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Page Three</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Page Four</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+<script>
+$('#add').click( function() {
+    // Store
+    
+    var showld = window.localStorage.getItem("lastname");
+    $("#result").append("test the " + showld);
+});
+</script>
+    <script>
+    function dellsd(){
+        window.localStorage.removeItem("JMDJSONP");
+    }
+    
+    </script>
+    
+</body>
+</html>
